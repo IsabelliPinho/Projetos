@@ -1,0 +1,36 @@
+ public static void main(String[] args) {
+    int troca = 0;
+        int v[] = new int[8];
+      
+        v[0] = 7;
+        v[1] = 5;
+        v[2] = 10;
+        v[3] = 3;
+        v[4] = 1;
+        v[5] = 4;
+        v[6] = 6;
+        v[7] = 2;
+
+        System.out.println("vetor desordenado");
+        for(int i = 0; i<v.length; i++){
+            System.out.print(v[i] + " ");
+        }
+            System.out.println("\n");
+            
+            for(int x = 0; x<v.length -1; x++){
+            for(int i = 0; i<v.length -1;i++){
+            if(v[i]> v[i+1]){
+            troca = v[i];
+            v[i] = v[i+1];
+            v[i+1] = troca;
+            for(int j = 0; j<v.length;j++){
+                System.out.print(v[j] + " ");
+            }
+                System.out.println("\n");
+            }
+            }}
+            
+            
+//n° vetor: 751031462
+        
+    }
